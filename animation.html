@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .b1{
+            background-color:aqua;
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            animation-name: id;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            position: absolute;
+            position: relative;
+            position: sticky;
+            border-radius: 100%;
+        }
+        div{
+        height: 200px;
+        width: 200px;
+        background-color:chartreuse;
+        transition-property: transform;
+        transition-duration: 10s;
+        transition-delay: 1s;
+        transition-timing-function:ease-in-out;
+        box-shadow: 70%;
+        border-radius: 5%;
+    }
+    #b2:hover{
+        background-color:crimson;
+        transform: rotate(160deg);
+        border-radius: 5%;
+    }
+       @keyframes id{
+        0%{background-color:orchid;left: 0px; top:0px;}
+        75%{background-color: blue;left: 200px;top: 25px;}
+        25%{background-color: blanchedalmond;left:35px;top:40px}  
+        }
+    </style>
+</head>
+<body>
+    <div class="b1"></div><br><br>
+    <div id="b2"></div>
+    
+</body>
+</html>
